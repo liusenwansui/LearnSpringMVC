@@ -1,5 +1,10 @@
-target/
 .settings/
 .classpath
 .project
-LearnSpringMVC.iml
+
+bin/
+
+target/
+
+*.iml
+.idea
