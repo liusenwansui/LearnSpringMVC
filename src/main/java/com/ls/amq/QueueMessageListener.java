@@ -10,17 +10,18 @@ import javax.jms.TextMessage;
  */
 public class QueueMessageListener implements MessageListener {
 
-    public void onMessage(Message message) {
-        if (message instanceof TextMessage) {
-            TextMessage tm = (TextMessage) message;
-            try {
-                System.out.println("QueueMessageListener监听到了文本消息：\t" + tm.getText());
-                // do something ...
-            } catch (JMSException e) {
-                e.printStackTrace();
-            }
-        } else {
-            System.out.println("消息未处理：" + message.toString());
-        }
+  @Override
+  public void onMessage(Message message) {
+    if (message instanceof TextMessage) {
+      TextMessage tm = (TextMessage) message;
+      try {
+        System.out.println("QueueMessageListener监听到了文本消息：\t" + tm.getText());
+        // do something ...
+      } catch (JMSException e) {
+        e.printStackTrace();
+      }
+    } else {
+      System.out.println("消息未处理：" + message.toString());
     }
+  }
 }
