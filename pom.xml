@@ -12,7 +12,7 @@
 
   <!-- Jar版本管理 -->
   <properties>
-    <springframework>4.1.4.RELEASE</springframework>
+    <springframework>5.3.18</springframework>
     <activemq>5.9.0</activemq>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
